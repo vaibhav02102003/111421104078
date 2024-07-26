@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up page</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	
+</head>
+<body>
+<div class="header">
+    <img src="E-shop logo.jpg" alt="" height="200px" width="200px" class="logo" >
+</div>
+<fieldset class="signup">
+	<legend><img src="assert/greenlogin.png"></legend>
+        <form class="login" name="myForm" action="./signupblank.html" method="get">
+            <h3>SIGN UP</h3>
+        
+            <label>First Name</label><br>
+            <input type="text" name="name" value="" required="text" placeholder="Ex : jack" id="Fname"><br>
+            <label>Last Name</label><br>
+            <input type="text" name="name" value="" required="text" placeholder="Ex : Allen" id="Lname"><br>
+
+            <label>Email</label><br>
+            <input type="email" name="email" value="" required="Email" placeholder="Enter email" id="email"><br>
+          
+            <label>Date of birth</label><br>
+            <input type="date" name="date" value="" required="number" placeholder="Date of birth" id="dob"><br>
+            <select>
+                <option value="">Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Others</option>
+            </select><br><br>
+        
+            <fieldset class="passverify">
+            <legend><input type="checkbox" id="click" onclick="passverify()"></legend>
+            <label>Create password</label><br>
+            <input type="password" name="pass" required="password" placeholder="Enter password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" id="password"><br>
+            <label>Re enter password</label><br>
+            <input type="password" name="pass" required="password" placeholder="Re Enter password" id="repassword">
+            </fieldset>
+            <br>
+            
+            <input type="checkbox" id="check" onclick="fun()"><label>terms and conditions</label><br>
+            <div class="btns">
+                <button class="btn" type="submit" id="createbtn">Create Account</button>
+            <button class="rbtn" type="reset" onclick="window.location.reload()">Reset</button>
+            </div>
+           
+            <p>if you have alredy account?<a href="./form.html"> Login</a></p>
+        </form>
+</fieldset>
+
+<div class="block">
+    <div class="pws" id="pws">
+        <h2>Password must contain the following:</h2>
+      <p id="letter" class="invalid">One <b>lowercase</b> letter</p>
+      <p id="capital" class="invalid">One <b>capital</b> letter</p>
+      <p id="number" class="invalid">One <b>number</b></p>
+      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+</div>
+
+<script>
+      passverify = () =>{
+        if(click.checked){
+            document.getElementById("password").type="text";
+            document.getElementById("repassword").type="text";
+        }
+        else{
+            document.getElementById("password").type="password";
+            document.getElementById("repassword").type="password";
+        }
+    }
+</script>
+
+<script src="login.js"></script>
+<script src="pwdval.js"></script>
+
+</body>
+</html>

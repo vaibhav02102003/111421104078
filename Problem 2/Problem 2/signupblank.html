@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account page</title>
+    <style>
+        .body{
+            height: 100vh;
+        }
+        .info{
+        height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        }
+        .content{
+            padding: 30px 50px;
+            border-radius: 20px;
+            border:2px solid black;
+        }
+        h1{
+            color: green;
+            
+        }
+        a{
+            text-decoration: none;
+            padding:8px 20px;
+            background-color:#004badcf;
+            color: white;
+            border-radius: 10px;
+
+        }
+        a:hover{
+            background-color: #004aad;
+        }
+
+    </style>
+</head>
+<body>
+<div class="info">
+   <div class="content">
+        <h1>Hi <span id="username"></span>Your Account has successfully created</h1>
+        <h3><a href="./form.html">Plese Login to site</a></h3>
+   </div>
+</div>
+<script>
+ var username = localStorage.getItem("username");
+ document.getElementById("username").innerHTML =`${username}, `;
+ document.getElementById("username").style.color = "#004aad";
+ document.getElementById("username").style.fontFamily="Arial, Helvetica, sans-serif"
+</script>
+</body>
+</html>

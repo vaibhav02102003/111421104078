@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./mana bazar logo crop.png">
+    <title>Grocery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&family=Kaushan+Script&family=Satisfy&display=swap');
+
+         body{
+            background-color: gray;
+            margin:0;
+            padding:0;
+            color: rgb(191, 18, 18);
+            padding-top:60px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .navbar{
+    height: 60px;
+    background-color: rgb(110, 21, 211);
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    
+}
+h3{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.navbar ul{
+    margin-top: 20px;
+    display: flex;
+    margin-right: 30px;
+}
+.navbar ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+.login{
+    margin-left: 50px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.login:hover{
+    color: black;
+    background-color: white;
+    transition: ease .5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+        .title{
+            height: 400px;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .content{
+            padding-top:0%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .heading{
+            font-family:'Archivo Black', sans-serif;
+            font-size: 50px;
+            animation: main 1s ease;
+            margin: 0;
+        }
+       .discription{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        animation: main 1s ease 200ms;
+       }
+       .shopnow{
+        padding: 7px 10px;
+        background-color:cadetblue;
+        margin-right: 60%;
+        color: white;
+        border-radius: 10px;
+        animation: main 1s ease 300ms;
+        text-align: center;
+       }
+       .title img{
+        animation: image 1s ease alternate;
+       }
+
+        .grocery{
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 20px;
+
+}
+.card{
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.card:hover{
+    transform: translateY(-15px);
+    transition:ease .5s;
+    box-shadow: 10px 10px 10px gray;
+}
+.buttons{
+           display: flex;
+           gap :50px
+        }
+.buttons a{
+            color: black;
+            text-align: center;
+            padding: 5px 20px;
+            border-radius: 15px;
+        }
+.buynow{
+            background-color: coral;
+        }
+.addtocart{
+            background-color: #FFD814;
+        }
+img{
+    border-radius: 15px;
+}
+.container{
+            height: 400px;
+            width: 100%;
+            background-color:gray;
+            animation: banner 5s step-start infinite ;
+        }
+
+@keyframes main {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes image {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes banner {
+    0%{
+        background-image: url('./assert/grocery\ banner2.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    25%{
+        background-image: url('./assert/grocery\ banner3.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background-image: url('./assert/grocery\ banner4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background-image: url('./assert/grocery\ banner5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background-image: url('./assert/grocery\ banner2.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <h3><a href="./index.html">Mana Bazar.in</a></h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./fashon.html">Fashion</a></li>
+            <li><a href="./electronins.html">Eloctronics</a></li>
+            <li><a href="./grocery.html">Grocery</a></li>
+            <li><a href="signup.html" class="login" id="login">Login | sign up</a></li>
+            
+        </ul>
+    </nav>
+    <div class="title">
+        <div class="content">
+           
+            <p class="heading">Feed Your Family <br>The Best</p>
+            <p class="discription">Get more for less price</p>
+            <p class="shopnow">Order Now</p>
+        </div>
+        <img src="./assert/grocery image.jpg" alt="" height="300px" width="350px">
+    </div>
+
+    <div class="grocery">
+        <div class="card">
+            <img src="./assert/gro1_India Gate Basmati Rice Bag, Mogra, 5kg (Broken Rice).jpg" alt="" height="200px" width="200px">
+            <h4>India Gate Basmati Rice Bag, Mogra, 5kg (Broken Rice)</h4>
+            <h2>₹328/-</h2>
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assert/gro2_Aashirvaad Superior MP Atta, 10kg Pack.jpg" alt="" height="200px" width="200px">
+            <h4>Aashirvaad Superior MP Atta, 10kg Pack</h4>
+            <h2>₹421/-</h2> 
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assert/gro3_Dhampure White Crystal Sugar, 5kg.jpg" alt="" height="200px" width="200px">
+            <h4>Dhampure White Crystal Sugar, 5kg</h4>
+            <h2>₹602/-</h2>
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assert/gro4_Vedaka Popular Toor Dal, 1kg Rich in Protein No Cholesterol No Additives.jpg" alt="" height="200px" width="200px">
+            <h4>Vedaka Popular Toor Dal, 1kg Rich in Protein No Cholesterol No Additives</h4>
+            <h2>₹189/-</h2>
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+        
+        </div>
+
+        <div class="grocery">
+        <div class="card">
+            <img src="./assert/gro5_Knorr Sweet Corn Chicken Soup, 40g.42g (Weight May Vary).jpg" alt="" height="200px" width="200px">
+            <h4>Knorr Sweet Corn Chicken Soup, 40g.42g (Weight May Vary)</h4>
+            <h2>₹114/-</h2>
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assert/gro6_Coke Zero Sugar Cold drink  Soft Drink with No Calories  Zero Sugar Drink  Recyclable Can, 300 ml (Pack of 6).jpg" alt="" height="200px" width="200px">
+            <h4>Coke Zero Sugar Cold drink  Soft Drink with No Calories  Zero Sugar Drink  Recyclable Can, 300 ml (Pack of 6)</h4>
+            <h2>₹216/-</h2>
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assert/gro7_Ferrero Rocher Premium Chocolates 24 Pieces, 300 g.jpg" alt="" height="200px" width="200px">
+            <h4>Ferrero Rocher Premium Chocolates 24 Pieces, 300g</h4>
+            <h2>₹759/-</h2>
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assert/gro8_Freedom Refined Sunflower Oil, 1L.jpg" alt="" height="200px" width="200px">
+            <h4>Freedom Refined Sunflower Oil, 1L</h4>
+            <h2>₹124/-</h2>
+            <div class="buttons">
+                <a href="./buypage.html" class="buynow">Buy Now</a>
+                <a href="./cartpage.html" class="addtocart">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        var username = localStorage.getItem("username");
+        if(username==='null'){
+            document.getElementById("login").innerHTML = "Login | sign up";
+        document.getElementById("popup").style.display = "block";
+        
+        }
+        else{
+            document.getElementById("login").innerHTML = `hi, ${username}..click to Logout`;
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("login").onclick=()=>{
+            localStorage.setItem("username",null);
+        window.location.reload();
+        }
+        }
+    </script>
+</body>
+</html>

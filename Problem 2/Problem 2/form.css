@@ -1,0 +1,109 @@
+.body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #004aad;
+	
+}
+.header img{
+	margin-left: 43%;
+}
+.logo{
+	border-radius: 15px;
+}
+fieldset{
+	margin: auto;
+	width: 300px;
+	height: 430px;
+	border-radius: 20px;
+	background-color: white;
+	border-style: solid;
+	box-shadow: 5px 5px 10px black; 
+	
+	
+}
+.box{
+	margin-left: 20%;
+}
+legend{
+	text-align: center;
+}
+#logo{
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border-style:solid; 
+}
+
+.login>input{
+	border-style:none;
+	border-bottom-style:solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	outline: none;
+}
+.login>h3{
+	margin-left: 50px;
+	color:blue;
+	font-family:sans-serif;
+}
+.login>b{
+	font-family:sans-serif;
+
+}
+
+#check{
+	margin-top: 30px;
+}
+.btn{
+	display: none;
+	padding:8px 50px;
+	margin-top: 20px ;
+	left:20px;
+	background-color:#004badcf;
+	color: white;
+	border-radius:20px;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: #004aad;
+}
+p{
+	margin-right: 20px;
+}
+.login>p>a{
+	text-decoration:none;
+	color:blue;
+}
+.login>p>a:hover{
+	color:red;
+}
+
+.passverify{
+	cursor: pointer;
+	margin-top: 20px;
+	width: fit-content;
+	padding: 10px 25px;
+	border-radius: 10px;
+	background-color:#004badcf;
+	color: white;
+	border: 2px solid black;
+}
+
+@keyframes invalid {
+	0%{
+		transform: translateX(10px);
+	}
+	25%{
+		transform: translateX(-10px);
+	}
+	50%{
+		transform: translateX(10px);
+	}
+	75%{
+		transform: translateX(-10px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
